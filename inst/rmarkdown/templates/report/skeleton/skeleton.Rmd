@@ -10,7 +10,7 @@ fontsize: 10
 papersize: a4paper
 bibliography      : ["references.bib"]
 output: 
-  IReports::businessReport:
+  RepliSimReport::report:
     keep_tex: TRUE
     latex_engine: xelatex
     resetStyleFiles: FALSE
@@ -36,10 +36,11 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 \maketitle <!--insert title-->
 Affiliation 1, Affiliation 2
-Correspondance concerning this replication report should be addressed to: primary_replicator@someuni.edu
+
+Correspondence concerning this replication report should be addressed to: primary_replicator@someuni.edu
 
 
-\section{Abstract}
+\section*{Abstract}
 \clearpage
 
 \section{Introduction}
@@ -144,21 +145,23 @@ Wherever feasible multiple interpretations where implemented.
 \section{Contributions}
 Authors made the following contributions according to the CRediT framework [https://casrai.org/credit/]
 Primary Replicator:
-      - Data Curation
-      - Formal Analysis (lead)
-      - Investigation
-      - Software
-      - Visualization
-      - Writing - Original Draft Preparation
-      - Writing - Review & Editing
+- Data Curation  
+- Formal Analysis (lead)  
+- Investigation  
+- Software  
+- Visualization (lead)
+- Writing - Original Draft Preparation
+- Writing - Review & Editing
 
 Co-Pilot:
-      - Formal Analysis (supporting)
-      - Investigation
-      - Software (supporting)
-      - Visualization (supporting)
-      - Writing - Review & Editing
+- Formal Analysis (supporting)  
+- Investigation  
+- Software (supporting)  
+- Visualization (supporting)  
+- Writing - Review & Editing  
 
+\newpage
+\section*{References}
 \begingroup
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
@@ -168,9 +171,9 @@ Co-Pilot:
 
 \newpage
 
-\section{Appendix}
+\section*{Appendix}
 
-\subsection{Additional result}
+\subsection*{Additional result}
 '<insert additional results not reported in the original article or results presented in an alternative way>'
 \subsection{Code organization}
 
@@ -178,18 +181,17 @@ The code and the files associated are organized in the form of a research compen
 which can be found in the following git repository `https://github.com/replisims/your_repo`
 
 
-\begin{minipage}{\linewidth}
 ```{r code_structure, cache = FALSE}
 # which R packages and versions?
 if ("fs" %in% installed.packages()) fs::dir_tree(path = ".", recurse = TRUE)
 ```
-\end{minipage}
+
 
 - `foldername`: contains '<insert description>'
 - `filename`: contains '<insert description>'
 - ...
 
-\subsubsection{Reproducibility Information}
+\subsubsection*{Reproducibility Information}
 
 This report was last updated on `r Sys.time()`. 
 The simulation replication was conducted using the following computational environment and dependencies: 
