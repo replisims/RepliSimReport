@@ -27,7 +27,7 @@ replisim_report <- function(template = "RepliSim", resetStyleFiles = FALSE,...) 
     else stop("Pandoc Version has to be >=1.17.0.2")
 
     template <- system.file(
-      paste0("rmarkdown/templates/business_report/", latex_template),
+      paste0("rmarkdown/templates/report/", latex_template),
       package = "RepliSimReport",
       mustWork = TRUE
     )
