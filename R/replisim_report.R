@@ -34,7 +34,7 @@ replisim_report <- function(template = "RepliSim", resetStyleFiles = FALSE,...) 
 
     # Copy required tex/rmd files to Rmd Working Directory
     path <- system.file(
-      "rmarkdown/templates/business_report/skeleton/",
+      "rmarkdown/templates/report/skeleton/",
       package = "RepliSimReport",
       mustWork = TRUE
       )
