@@ -1,0 +1,4 @@
+name: RepliSims Report (pdf)
+description: >
+  Template for creating Replisims Replication Report in RMarkdown loosly oriented at MS Word defaults and IReport Business Report.
+create_dir: true

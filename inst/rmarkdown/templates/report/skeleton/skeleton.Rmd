@@ -1,0 +1,208 @@
+---
+title: Replication Report
+author: Primary Replicator, Co-pilot
+date: \today
+params:
+  iblue: 008080
+  igray: d4dbde
+documentclass: article
+fontsize: 10
+papersize: a4paper
+bibliography      : ["references.bib"]
+output: 
+  IReports::businessReport:
+    keep_tex: TRUE
+    latex_engine: xelatex
+    resetStyleFiles: FALSE
+header-includes: 
+  - \newcommand{\iblue}{`r params$iblue`}
+  - \newcommand{\igray}{`r params$igray`}
+ 
+include-before:
+  - \renewcommand{\contentsname}{Table of Contents}
+  - \renewcommand{\pagename}{Page}
+---
+
+```{r setup, include = FALSE}
+# packages
+library(dplyr)
+library(knitr)
+library(xtable)
+
+# settings
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+\urlstyle{same} <!--ensure urls have the same style as the rest of the text-->
+
+\maketitle <!--insert title-->
+Affiliation 1, Affiliation 2
+Correspondance concerning this replication report should be addressed to: primary_replicator@someuni.edu
+
+
+\section{Abstract}
+\clearpage
+
+\section{Introduction}
+
+This replication report documents the replication attempt of the simulation study `<insert reference of replicated study>`. 
+Following the definition of @rougier_sustainable_2017-1 we understand the replication of a published study as writing and running new code based on the description provided in the original publication with the aim of obtaining the same results.
+
+\section{Method}
+
+\subsection{Information basis}
+
+\subsection{Data Generating Mechanism}
+Information provided in the above mentioned sources indicated that the following simulation factors were systematically varied in generating the artificial data.
+
+| Simulation factor | No. levels | Levels|
+|------|--|-------|
+| *Varied*||   
+| *Fixed* |||
+
+\subsubsection{Simulation Factor 1}
+\subsubsection{Simulation Factor 2}
+\subsubsection{Simulation Factor 3}
+
+\begin{minipage}{\linewidth}
+Data generation can be summarized with the following pseudo code:
+
+\texttt{For 1000 repetitions of each of 400 unique scenarios:}
+\begin{itemize}[leftmargin=*] 
+	\item[--] \texttt{Set unique seed based on scenario id and number of repetition.}
+	\item[--] \texttt{...}
+	\item[--] \texttt{ While some condition < some other condition}
+	\begin{itemize}
+	  \item[$\ast$] \texttt{Sample ... from the given distribution.}
+	  \item[$\ast$] \texttt{Sample a sample size from the given distribution.}
+	  \item[$\ast$] \texttt{Compute ... based on these random elements.}
+	  \item[$\ast$] \texttt{Determine ... based on mechanism of current scenario.}
+	\end{itemize}
+	\item[--] \texttt{If some condition is > x:}
+	\begin{itemize}
+	  \item[$\ast$] \texttt{Determine ... \& resample from corresponding ... model.}
+	\end{itemize}
+	\item[--] \texttt{Apply ...}
+\end{itemize}
+\end{minipage}
+\newpage
+\FloatBarrier <!-- ensure there are no plots in the references -->
+
+\subsection{Compared Methods}
+The study compares '<describe the methods that are compared and how they are implemented>'
+
+\subsubsection{Method 1}
+'<describe how the first method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>'
+\subsubsection{Method 2}
+'<describe how the second method is defined and implemented>'
+'<describe how the first method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>'
+
+\subsection{Performance measures}
+'<describe which performace measures are compared, if applicable mention specialized R packages, their versions, als well as parameter settings of functions>'
+\section{References}
+
+\subsection{Technical implementation}
+While the original simulation study was carried out in '<computational environment of original study>' our replication was implemented
+using the R programming environment (details regarding software versions can be obtained from the section Reproducibility Information). 
+The corresponding R code can be obtained from https://github.com/replisims/your_repo. 
+<!-- Add zenodo doi once obtained-->
+
+The following table provides an overview of replicator degrees of freedom, 
+i.e. decisions that had to be made by the replicators because of insufficient or contradicting information. 
+Issues were resolved by discussion among the replicators. 
+Decisions were based on what the replicators perceived to be the most likely implementation with likeliness estimated by common practice and/or guideline recommendations.
+Wherever feasible multiple interpretations where implemented.
+
+| Issue| Replicator decision| Justification |
+|--------|--------|------|
+| Data dependence| each scenario is implemented in independently generated data               | Best practice [@burton_design_2006]|  
+
+\subsection{Some issue}
+'<More details on how the information provided was insufficient, unclear or vague>'
+*"Some weird quote from the original article that you could not make any sense of"* (p.XY)
+
+\subsection{Another issue}
+'<More details on how the information provided was insufficient, unclear or vague>'
+*"Some weird quote from the original article that you could not make any sense of"* (p.XY)
+
+\section{Results}
+
+\subsection{Simulation descriptives}
+\subsection{Replication of result figures}
+\subsubsection{Type 1 error rate}
+\subsection{Replication of result figures}
+\subsection{Replication of results presented in text form }
+
+\FloatBarrier
+\section{Discussion}
+
+\subsection{Replicability}
+\subsection{Replicator degrees of freedom}
+\subsection{Equivalence of results}
+
+\section{Acknowledgments}
+
+\section{Contributions}
+Authors made the following contributions according to the CRediT framework [https://casrai.org/credit/]
+Primary Replicator:
+      - Data Curation
+      - Formal Analysis (lead)
+      - Investigation
+      - Software
+      - Visualization
+      - Writing - Original Draft Preparation
+      - Writing - Review & Editing
+
+Co-Pilot:
+      - Formal Analysis (supporting)
+      - Investigation
+      - Software (supporting)
+      - Visualization (supporting)
+      - Writing - Review & Editing
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id="refs" custom-style="Bibliography"></div>
+\FloatBarrier
+
+\newpage
+
+\section{Appendix}
+
+\subsection{Additional result}
+'<insert additional results not reported in the original article or results presented in an alternative way>'
+\subsection{Code organization}
+
+The code and the files associated are organized in the form of a research compendium
+which can be found in the following git repository `https://github.com/replisims/your_repo`
+
+
+\begin{minipage}{\linewidth}
+```{r code_structure, cache = FALSE}
+# which R packages and versions?
+if ("fs" %in% installed.packages()) fs::dir_tree(path = ".", recurse = TRUE)
+```
+\end{minipage}
+
+- `foldername`: contains '<insert description>'
+- `filename`: contains '<insert description>'
+- ...
+
+\subsubsection{Reproducibility Information}
+
+This report was last updated on `r Sys.time()`. 
+The simulation replication was conducted using the following computational environment and dependencies: 
+
+\FloatBarrier
+```{r colophon, cache = FALSE}
+# which R packages and versions?
+if ("devtools" %in% installed.packages()) devtools::session_info()
+```
+
+The current Git commit details are:
+
+```{r git}
+# what commit is this file at? 
+if ("git2r" %in% installed.packages() & git2r::in_repository(path = ".")) git2r::repository(here::here())  
+```
