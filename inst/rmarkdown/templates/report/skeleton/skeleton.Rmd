@@ -10,7 +10,7 @@ fontsize: 10
 papersize: a4paper
 bibliography      : ["references.bib"]
 output: 
-  RepliSimReport::report:
+  RepliSimReport::replisim_report:
     keep_tex: TRUE
     latex_engine: xelatex
     resetStyleFiles: FALSE
