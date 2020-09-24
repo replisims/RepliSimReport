@@ -1,6 +1,6 @@
 ---
 title: Replication Report
-author: Primary Replicator, Co-pilot
+author: Primary Replicator\textsuperscript{1}, Co-pilot \textsuperscript{2}
 date: \today
 params:
   iblue: 008080
@@ -35,12 +35,13 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 \urlstyle{same} <!--ensure urls have the same style as the rest of the text-->
 
 \maketitle <!--insert title-->
-Affiliation 1, Affiliation 2
+`<Affiliation 1, Affiliation 2>`
 
-Correspondence concerning this replication report should be addressed to: primary_replicator@someuni.edu
+Correspondence concerning this replication report should be addressed to: `<primary_replicator@someuni.edu>`
 
 
 \section*{Abstract}
+`<a summary of the replication effort>`
 \clearpage
 
 \section{Introduction}
@@ -51,6 +52,7 @@ Following the definition of @rougier_sustainable_2017-1 we understand the replic
 \section{Method}
 
 \subsection{Information basis}
+`<What sources were used to obtain information? The original article, some appendix, online supplements, other articles from the sam authors, code availible from the authors personal website?>`
 
 \subsection{Data Generating Mechanism}
 Information provided in the above mentioned sources indicated that the following simulation factors were systematically varied in generating the artificial data.
@@ -61,9 +63,15 @@ Information provided in the above mentioned sources indicated that the following
 | *Fixed* |||
 
 \subsubsection{Simulation Factor 1}
+`<More detail of how factor 1 was varied and implemented>`
 \subsubsection{Simulation Factor 2}
+`<More detail of how factor 2 was varied and implemented>`
 \subsubsection{Simulation Factor 3}
+`<More detail of how factor 3 was varied and implemented>`
 
+`<If the design was not full-factorial describe the simulation scenarios by other means>`
+
+`<You can add pseudocode or a flowchart to illustrate the data generation or the entire simulation design>`
 \begin{minipage}{\linewidth}
 Data generation can be summarized with the following pseudo code:
 
@@ -89,20 +97,23 @@ Data generation can be summarized with the following pseudo code:
 \FloatBarrier <!-- ensure there are no plots in the references -->
 
 \subsection{Compared Methods}
-The study compares '<describe the methods that are compared and how they are implemented>'
+The study compares `<describe the methods that are compared and how they are implemented>`
 
 \subsubsection{Method 1}
-'<describe how the first method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>'
+`<describe how the first method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>`
 \subsubsection{Method 2}
-'<describe how the second method is defined and implemented>'
-'<describe how the first method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>'
+`<describe how the second method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>`
 
 \subsection{Performance measures}
-'<describe which performace measures are compared, if applicable mention specialized R packages, their versions, als well as parameter settings of functions>'
-\section{References}
+`<describe which performance measures are compared, if applicable mention specialized R packages, their versions, as well as parameter settings of functions>`
+
+The following flowchart describes the simulation design
+```{r, out.width='450pt', fig.cap= "Flow chart of data generating mechanism"}
+knitr::include_graphics("flowchart.PNG")
+```
 
 \subsection{Technical implementation}
-While the original simulation study was carried out in '<computational environment of original study>' our replication was implemented
+While the original simulation study was carried out in `<computational environment of original study>` our replication was implemented
 using the R programming environment (details regarding software versions can be obtained from the section Reproducibility Information). 
 The corresponding R code can be obtained from https://github.com/replisims/your_repo. 
 <!-- Add zenodo doi once obtained-->
@@ -118,51 +129,67 @@ Wherever feasible multiple interpretations where implemented.
 | Data dependence| each scenario is implemented in independently generated data               | Best practice [@burton_design_2006]|  
 
 \subsection{Some issue}
-'<More details on how the information provided was insufficient, unclear or vague>'
+`<More details on how the information provided was insufficient, unclear or vague>`
 *"Some weird quote from the original article that you could not make any sense of"* (p.XY)
 
 \subsection{Another issue}
-'<More details on how the information provided was insufficient, unclear or vague>'
+`<More details on how the information provided was insufficient, unclear or vague>`
 *"Some weird quote from the original article that you could not make any sense of"* (p.XY)
 
 \section{Results}
 
 \subsection{Simulation descriptives}
+`<describe tha sampling distribution if any of the simulation parameters were sampled>`
 \subsection{Replication of result figures}
-\subsubsection{Type 1 error rate}
-\subsection{Replication of result figures}
+\subsubsection{Outcome 1}
+`<provide the information that were presented in figure form in the original>`
+\subsection{Replication of result tables}
+`<compare any tabulated data to the original>`
 \subsection{Replication of results presented in text form }
+`<If the text describes any results using words describe how that relates to your findings.>`
 
 \FloatBarrier
 \section{Discussion}
 
 \subsection{Replicability}
+`<Provide a general statement of how you experienced the replication process. Was it easy? What made it easy or difficult?>`
+
 \subsection{Replicator degrees of freedom}
+`<Here you can discuss the replicator degrees of freedom. What could the authors have done to make it more clear? Do you think the replicator degrees of freedom are so intensive that they sould influence the results?>`
+
 \subsection{Equivalence of results}
+`<How would you judge the overall equivalence of results? Are the orders of magnitude comparable? Are trends in the same direction? Would you draw the same conclusions as the authors based on your replication? Were some results not comparable because of insufficient figure resolution or labeling?>`
 
 \section{Acknowledgments}
+`<Acknowledge the help of anyone who assisted you in the process>`
 
 \section{Contributions}
-Authors made the following contributions according to the CRediT framework [https://casrai.org/credit/]
+Authors made the following contributions according to the CRediT framework https://casrai.org/credit/
+
 Primary Replicator:
+
 - Data Curation  
 - Formal Analysis (lead)  
 - Investigation  
 - Software  
-- Visualization (lead)
-- Writing - Original Draft Preparation
-- Writing - Review & Editing
+- Visualization (lead)  
+- Writing - Original Draft Preparation  
+- Writing - Review & Editing  
 
 Co-Pilot:
+
 - Formal Analysis (supporting)  
 - Investigation  
 - Software (supporting)  
 - Visualization (supporting)  
-- Writing - Review & Editing  
+- Validation  
+- Writing - Review & Editing   
 
 \newpage
-\section*{References}
+
 \begingroup
+\section*{References}
+
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
 
@@ -174,7 +201,7 @@ Co-Pilot:
 \section*{Appendix}
 
 \subsection*{Additional result}
-'<insert additional results not reported in the original article or results presented in an alternative way>'
+`<insert additional results not reported in the original article or results presented in an alternative way>`
 \subsection{Code organization}
 
 The code and the files associated are organized in the form of a research compendium
@@ -187,8 +214,8 @@ if ("fs" %in% installed.packages()) fs::dir_tree(path = ".", recurse = TRUE)
 ```
 
 
-- `foldername`: contains '<insert description>'
-- `filename`: contains '<insert description>'
+- `foldername`: contains `<insert description>`
+- `filename`: contains `<insert description>`
 - ...
 
 \subsubsection*{Reproducibility Information}
