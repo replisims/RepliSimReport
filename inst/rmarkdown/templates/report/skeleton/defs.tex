@@ -26,6 +26,10 @@
 \usepackage{enumitem}
 \usepackage{longtable}
 \usepackage{lscape}
+%\usepackage{verbatim}
+%\makeatletter
+%\def\verbatim@font{\scriptsize\ttfamily}
+%\makeatother
 %\RequirePackage[normalem]{ulem} %DIF PREAMBLE
 %\RequirePackage{color}
 %\providecommand{\tightlist}{%
@@ -45,7 +49,16 @@
 \defaultfontfeatures{Mapping = tex-text}
 \setmainfont[BoldFont = Lato-Bold.ttf, ItalicFont = Lato-Italic.ttf, BoldItalicFont = Lato-BoldItalic.ttf]{Lato-Regular.ttf}
 \newfontfamily\headingfont[ItalicFont = Lato-BlackItalic.ttf]{Lato-Black.ttf}
+%\setmonofont{Ubuntu Mono}
+\setmonofont[Scale=0.90,
+BoldFont=UbuntuMono-Bold.ttf,
+%ItalicFont=UbuntuMono-Italic.ttf,
+BoldItalicFont=UbuntuMono-BoldItalic.ttf
+]{UbuntuMono-Regular.ttf}
 
+\makeatletter
+\def\verbatim@font{\linespread{1}\normalfont\ttfamily}
+\makeatother
 
 % % sections
 \titleformat{\section}{\color{iblue}\headingfont\Large\bfseries}{\thesection}{1em}{}[\titlerule]
