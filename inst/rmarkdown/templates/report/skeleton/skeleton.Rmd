@@ -56,7 +56,7 @@ Following the definition of @rougier_sustainable_2017-1 we understand the replic
 \section{Method}
 
 \subsection{Information basis}
-`<What sources were used to obtain information? The original article, some appendix, online supplements, other articles from the sam authors, code availible from the authors personal website?>`
+`<What sources were used to obtain information? The original article, some appendix, online supplements, other articles from the same authors, code available from the authors personal website?>`
 
 \subsection{Data Generating Mechanism}
 Information provided in the above mentioned sources indicated that the following simulation factors were systematically varied in generating the artificial data.
@@ -143,12 +143,12 @@ Wherever feasible multiple interpretations where implemented.
 \section{Results}
 
 \subsection{Simulation descriptives}
-`<describe tha sampling distribution if any of the simulation parameters were sampled>`
+`<Describe the sampling distribution if any of the simulation parameters were sampled>`
 \subsection{Replication of result figures}
 \subsubsection{Outcome 1}
-`<provide the information that were presented in figure form in the original>`
+`<Provide the information that were presented in figure form in the original>`
 \subsection{Replication of result tables}
-`<compare any tabulated data to the original>`
+`<Compare any tabulated data to the original>`
 \subsection{Replication of results presented in text form }
 `<If the text describes any results using words describe how that relates to your findings.>`
 
