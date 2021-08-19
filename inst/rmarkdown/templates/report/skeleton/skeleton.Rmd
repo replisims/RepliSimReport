@@ -100,16 +100,17 @@ Data generation can be summarized with the following pseudo code:
 \newpage
 \FloatBarrier <!-- ensure there are no plots in the references -->
 
-\subsection{Compared Methods}
-The study compares `<describe the methods that are compared and how they are implemented>`
+\subsection{Investigated Methods}
+The study investigates ... `<Describe the methods that are investigated and how they are implemented>`
 
 \subsubsection{Method 1}
-`<describe how the first method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>`
+`<Describe how the first method is defined and implemented. You can include equations and or R code. If applicable, mention specialized R packages, their version as well as, parameters of specific functions.>`
+
 \subsubsection{Method 2}
-`<describe how the second method is defined and implemented. You can include equations and or r code. If applicable mention specialized R packages, their version as well as, parameters of specific functions>`
+`<Describe how the second method is defined and implemented. You can include equations and or R code. If applicable, mention specialized R packages, their version as well as, parameters of specific functions.>`
 
 \subsection{Performance measures}
-`<describe which performance measures are compared, if applicable mention specialized R packages, their versions, as well as parameter settings of functions>`
+`<Describe which performance measures are compared, if applicable mention specialized R packages, their versions, as well as parameter settings of functions.>`
 
 The following flowchart describes the simulation design
 ```{r, out.width='450pt', fig.cap= "Flow chart of data generating mechanism"}
@@ -159,10 +160,11 @@ Wherever feasible multiple interpretations where implemented.
 `<Provide a general statement of how you experienced the replication process. Was it easy? What made it easy or difficult?>`
 
 \subsection{Replicator degrees of freedom}
-`<Here you can discuss the replicator degrees of freedom. What could the authors have done to make it more clear? Do you think the replicator degrees of freedom are so intensive that they sould influence the results?>`
+`<Here you can discuss the replicator degrees of freedom. What could the authors have done to make it more clear? Do you think the replicator degrees of freedom are so extensive that they could influence the results?>`
 
 \subsection{Equivalence of results}
-`<How would you judge the overall equivalence of results? Are the orders of magnitude comparable? Are trends in the same direction? Would you draw the same conclusions as the authors based on your replication? Were some results not comparable because of insufficient figure resolution or labeling?>`
+`<How would you judge the overall equivalence of results? Are the orders of magnitude comparable? Are trends in the same direction? Would you draw the same conclusions as the authors based on your replication? Were some results not comparable because of insufficient figure resolution or labeling? Did the authors ommit some results which consequently cannot be compared?>`
+
 
 \section{Acknowledgments}
 `<Acknowledge the help of anyone who assisted you in the process>`
